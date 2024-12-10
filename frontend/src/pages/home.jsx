@@ -6,7 +6,7 @@ import React from 'react'
 // import Projects from './Projects'
 // import Skills from './Skills'
 import profileImage from "../assets/images/profile-pic (1).png"
-import { FaGithub } from 'react-icons/fa';
+import { FaGithub, FaTwitter, FaInstagram, FaLinkedin } from 'react-icons/fa';
 
 const Home = () => {
   return (
@@ -21,13 +21,22 @@ const Home = () => {
         <div>
           <h1 className="text-4xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-teal-400 via-pink-500 to-purple-600">Aditya Kumar</h1>
           <p className="text-sm text-gray-400">Welcome to My Portfolio!</p>
-          <p className="text-sm mt-1 text-gray-700">Web Developer | Full-Stack Enthusiast</p>
+          <p className="text-sm mt-1 text-gray-700">Web Developer | Full-Stack </p>
         </div>
       </div>
 
-      <div className="w-full h-56 bg-blue-900 rounded-3xl col-span-2 flex items-center justify-center text-white text-lg">
-        <p>💻 I specialize in building dynamic and responsive web applications using the MERN stack. Let's create something amazing together!</p>
-      </div>
+      <div className="w-full h-56 bg-white shadow-2xl rounded-3xl col-span-2 flex flex-col items-center justify-center text-gray-700 text-lg px-4">
+  <h2 className="text-4xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-teal-400 via-pink-500 to-purple-600">
+    About Us
+  </h2>
+  <p className="mt-4 mx-4 text-sm text-left text-gray-500">
+    Back in 2012, I got my first computer solely to play games. That experience sparked a deep fascination with computers, and ever since, I've dreamed of developing my own game.
+  </p>
+  <p className="my-4 mx-4 text-sm text-left text-gray-500">
+    Hey there, This is Aditya Kumar. I am passionate about creating websites that meet and exceed my clients' expectations. My technical expertise includes JavaScript, Node.js, Express.js, React.js, MongoDB, and PostgreSQL. I have comprehensive experience in all stages of the development cycle for modern, dynamic website designs, ensuring that I deliver high-quality results tailored to each client's needs.
+  </p>
+</div>
+
 
       <div className="w-full h-72 bg-white shadow-2xl rounded-3xl col-span-2 flex flex-col items-center justify-center px-4 text-center">
        <h2 className="text-4xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-teal-400 via-pink-500 to-purple-600 mb-4">
@@ -40,6 +49,16 @@ const Home = () => {
     <li className='text-gray-300'>|</li>
     <li>Responsive Design & UI/UX</li>
   </ul>
+
+  <div className="mt-4 flex flex-wrap justify-center space-x-4">
+    <span className="px-4 py-2 text-sm font-medium text-white shadow-xl bg-purple-600 rounded-full">JavaScript</span>
+    <span className="px-4 py-2 text-sm font-medium text-white shadow-xl bg-purple-600 rounded-full">React</span>
+    <span className="px-4 py-2 text-sm font-medium text-white shadow-xl bg-purple-600 rounded-full">Node.js</span>
+    <span className="px-4 py-2 text-sm font-medium text-white shadow-xl bg-purple-600 rounded-full">Express</span>
+    <span className="px-4 py-2 text-sm font-medium text-white shadow-xl bg-purple-600 rounded-full">MongoDB</span>
+    <span className="px-4 py-2 text-sm font-medium text-white shadow-xl bg-purple-600 rounded-full">Git</span>
+    <span className="px-4 py-2 text-sm font-medium text-white shadow-xl bg-purple-600 rounded-full">Blockchain</span>
+  </div>
 </div>
 
 
@@ -80,15 +99,43 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="w-full h-24 bg-blue-600 rounded-3xl flex items-center justify-center text-white text-lg">
-        <p>📧 Contact: <span className="font-bold">aditya@example.com</span></p>
-      </div>
+      <div className="w-full h-24 bg-white shadow-2xl rounded-3xl flex flex-col items-center justify-center text-white text-lg p-4">
+  <h2 className="text-2xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-teal-400 via-pink-500 to-purple-600">
+    Contact
+  </h2>
+  <p className="mt-2 font-semibold text-gray-500">Email: <span className="font-bold">aditya@example.com</span></p>
+</div>
 
-      <div className="w-full h-24 bg-blue-900 rounded-3xl col-span-2 flex items-center justify-center text-white text-lg">
-        <p>🌐 Connect with me: <span className="font-bold">LinkedIn | GitHub | Twitter</span></p>
+
+
+<div className="w-full h-24 bg-white shadow-2xl rounded-3xl col-span-2 flex items-center justify-center text-white text-lg">
+  {/* <h2 className="text-2xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-teal-400 via-pink-500 to-purple-600">
+    Connect with me:
+  </h2> */}
+  <div className="flex items-center space-x-10 mt-2">
+    <a href="https://twitter.com/yourusername" target="_blank" rel="noopener noreferrer">
+      <div className="w-12 h-12 bg-purple-500 rounded-full flex items-center justify-center">
+        <FaTwitter className="text-white text-2xl" />
       </div>
+    </a>
+    <a href="https://www.instagram.com/yourusername" target="_blank" rel="noopener noreferrer">
+      <div className="w-12 h-12 bg-purple-500 rounded-full flex items-center justify-center">
+        <FaInstagram className="text-white text-2xl" />
+      </div>
+    </a>
+    <a href="https://www.linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer">
+      <div className="w-12 h-12 bg-purple-500 rounded-full flex items-center justify-center">
+        <FaLinkedin className="text-white text-2xl" />
+      </div>
+    </a>
+  </div>
+</div>
+
+
     </div>
   )
 }
 
 export default Home;
+
+
