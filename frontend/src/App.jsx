@@ -7,11 +7,13 @@ import Blog from "./pages/Blog";
 import Contact from "./pages/Contact";
 import Projects from "./pages/Projects";
 import Skills from "./pages/Skills";
+// import Navbar from "./components/navbar";
 
 
 function App() {
   return (
     <Router>
+      {/* <Navbar /> */}
       <Routes>
         <Route path="/" element={<Home/>} />
         <Route path="/hero" element={<Hero />} />
